@@ -1,0 +1,24 @@
+body{
+    background-color: lightcoral;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    display: flex;
+    padding: 50px;
+}
+        
+table{
+    background-color: white;
+    border: 1px solid black;
+    padding:  10px;
+    font-size: 35px;
+
+}
+
+td{
+    border-radius: 5px;
+    border: 1px solid;
+    text-align: center;
+    padding: 10px;
+}
+
