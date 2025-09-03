@@ -6,7 +6,8 @@
     <title>Apredendo Javascript</title>
 </head>
 <body>
-  <h1>Javascript</h1>  
+  <h1>Javascript</h1>
+  <button onclick="Calcular()">Clique aqui para chamar a função</button>  
   <script>
     /*
     var idade = 15
@@ -45,11 +46,51 @@
     }
     */
 
+    /*
     var idade = prompt("Digite sua idade: ")
     if(idade >= 16){    
         alert("Você pode votar")
     } else {
         alert("Você não pode votar")
+    }
+    */
+    
+    /*
+    for (let i = 0; i < 10; i++){
+        document.write(`Interação numero ${i} <br/>`)
+    }
+    let i = 0 
+    while(i < 10)
+    {
+        document.write(`Interação com while numero ${i} <br/>`)
+        i++
+    }
+    */
+
+    
+    function Calcular(){
+        let num1=prompt("Digite um número:")
+        let num2=prompt("Digite outro número:")
+        var escolha=prompt("Escolha a operação: 1-Soma, 2-Divisão, 3-Multiplicação, 4-Subtração")
+        if (escolha==1){
+            let soma=Number(num1)+Number(num2)
+            alert(soma)
+        }   
+        else if (escolha==2){
+            let divisao=Number(num1)/Number(num2)
+            alert(divisao)
+        }
+        else if (escolha==3){
+            let multiplicacao=Number(num1)*Number(num2)
+            alert(multiplicacao)
+        }
+        else if (escolha==4){
+            let subtracao=Number(num1)-Number(num2)
+            alert(subtracao)
+        }
+        else{
+            alert("Opção inválida")
+        }
     }
   </script>
 </body>
